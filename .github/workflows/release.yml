@@ -15,12 +15,8 @@ jobs:
 
       # Zips ./module, prechecks it with the KernelSU Modules validator, then publishes
       # draft -> upload -> publish so the release becomes immutable as a whole.
-      #
-      # !!! SECURITY: `@main` is a PLACEHOLDER. KernelSU-Modules/tools is not published yet.    !!!
-      # !!! Before this workflow is published or copied, pin the action to a full 40-character  !!!
-      # !!! commit SHA (a branch can be moved; this step runs with `contents: write`):         !!!
-      # !!!   uses: KernelSU-Modules/tools/actions/module-release@<40-char-sha> # v1           !!!
-      - uses: KernelSU-Modules/tools/actions/module-release@main
+      # Pin the action to a full commit SHA (a branch can be moved; this step runs with `contents: write`).
+      - uses: KernelSU-Modules/tools/actions/module-release@e0ac1a6193e698beac3c2fc47dec88d180efca8a
         id: release
         with:
           module-dir: module
