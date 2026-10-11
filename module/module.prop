@@ -1,0 +1,7 @@
+id=example_module_demo
+name=Example Module Demo
+version=v1.0.0
+versionCode=100
+author=KernelSU-Modules contributors
+description=A minimal module showing how to publish to KernelSU Modules. It does nothing on the device.
+updateJson=https://modules.kernelsu.org/api/v1/modules/example_module_demo/update.json

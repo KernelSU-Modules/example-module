@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/KernelSU-Modules/tools/main/schemas/module.schema.json
+# KernelSU Modules metadata for this module. Reference: https://developers.kernelsu.org/docs/module-yaml
+# version / versionCode come from module/module.prop inside the release ZIP, not from this file.
+schemaVersion: 1
+id: example_module_demo
+name: Example Module Demo
+summary: A minimal module that shows how to publish to KernelSU Modules
+description: README.md
+license: MIT
+homepage: https://github.com/KernelSU-Modules/example-module
+support: https://github.com/KernelSU-Modules/example-module/issues
+tags: [example, tools]
+icon: assets/icon.png
+metamodule: false
+
+authors:
+  - name: KernelSU-Modules contributors
+    url: https://github.com/KernelSU-Modules
+
+compatibility:
+  androidMinApi: 29
+  architectures: [arm64-v8a, x86_64]
+
+release:
+  assetPattern: "example_module_demo-*.zip"
